@@ -1,4 +1,4 @@
-import { use, useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./App.css";
 import words from "./WordList.json";
 import HangmanDrawing from "./HangmanDrawing";
@@ -6,7 +6,7 @@ import HangmanWord from "./HangmanWord";
 import Keyboard from "./Keyboard";
 
 function App() {
-  const [wordToGuess, setWordToGuess] = useState(() => {
+  const [wordToGuess] = useState(() => {
     return words[Math.floor(Math.random() * words.length)];
   });
 
