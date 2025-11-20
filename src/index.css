@@ -1,0 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;       /* Important */
+  min-height: 100%;   /* Important */
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  height: auto;       /* Important */
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* top, not center */
+}
